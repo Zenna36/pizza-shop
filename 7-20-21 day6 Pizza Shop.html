@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/7-22-21basics.css"/>
+    <title>Pizza Shop</title>
+</head>
+<body>
+    <!-- Charlie's pizza is very much but also very different from Papa Murphy's pizza located in denver, co. it remains one of my favorite pizza establishments. -->
+    <div Intro to Charlie's Pizza Pies>
+        <h1><strong>Welcome to Charlie's Pizza Pie</strong></h1>
+            <h2><em>"Thats amore"</em></h2>
+
+    <hr>
+
+    <p><strong>Here at Charlie's Pizza Pie, we specialize in handcrafted pan styled pizzas. Our tried and true take-and-bake style      ensures that your pizza is baked to your heart's desire. Whether you visit out store, or you have it delivered, ALL of our pies can be bundled with a beautiful cast iron skillet.</strong></p>
+
+    <body> Before you begin, lets create an account that way you can keep up with your order as well as earn pie points towards your next purchase!</body>
+    <form action="#link">
+            <input type="text" value="" id="username" placeholder="Username" required/>
+            <input type="password" value="" id="password" placeholder="Password"/>
+            <input type="text" value="" id="numberInput" placeholder="Phone Number"/>
+            <p>Please indicate your birthday as well, that way we can send you specialized gifts each time you orbit the sun!</p>
+            <input type="date" value="" id="date" placeholder="Birthday"/>
+            <input type="submit" value="Submit">
+    </form>
+
+    <h3>How would you like us to contact you:</h3>
+        <ul Contact preferences>
+            <li><input type="checkbox" name="contact" id="text message" value="text message"> <label for="Text Message"> Text Message 
+            </label></li>
+
+            <li><input type="checkbox" name="contact" id="email" value="email"> <label for="Email"> Email 
+            </label></li>
+
+            <li><input type="checkbox" name="contact" id="no opt out" value="opt out" > <label for="I'd rather not be contacted"></label>Please don't contact me </label></li>
+            <!-- removing bullet points will be done in CSS -->
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- picture of some customer's pizza (actually these are ones I've made and am v proud of) -->
+    <div Customers pizza pies>
+        <h3><em>Here are some of our proud customers pizzas! (note: our Pepperoni is by far our most popular)</em></h3>
+
+        <img src="Media/IMG_8731.JPEG" width="500px" height="auto" alt="homemade pepperoni pizza">
+
+        <p> Notice how this customer added FRESH basil onto the top of their pizza (a true connosieur of all things pizza)</p>
+
+        <img src="Media/IMG_5041.JPEG" width="500px" height="auto" alt="homemade pizza with basil">
+
+        <p> Here's a video from one of our loyal customers! (you can clearly see that all of our customers have the same style of oven)</p>
+        <!-- The jig is up, you caught me. These are all pizzas I'VE made. that explains why the ovens all look the same -->
+        <video controls="controls" width="500px" height="auto" name="Pizza Sizzle" src="Media/Pizza sizzle.mp4"></video>
+    </div>
+
+    <!-- user account creation. requiring username, password and brithday  -->
+        <h2><em>Hungry yet?</em></h2>
+        <h3>Order below. Make sure to indicate whether you would like your pizza to be bundled with the cast iron skillet. All of our pans are 12" in diameter.</h3>
+
+    <hr> 
+    <hr>
+
+    <!-- toppings time -->  
+    <div Time for toppings>
+        <h3><strong>Please indicate your preferred toppings.</strong> 
+            All of our pizzas have a hearty marinara sauce base, seasoned with basil and red pepper flakes. </h3> 
+        </div>
+    <div Pizza time>
+        <select name="meat toppings" id="meat toppings" multiple size="5">
+            <option value="" disabled selected> Meat Toppings</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="sausage">Sausage</option>
+            <option value="canadian bacon">Canadian Bacon</option>
+            <option value="grilled chicken">Grilled Chicken</option>
+        </select>
+    </div>
+    <div Veggie pizza time>
+        <h3> Choose your veggies</h3>
+        <select name="veggie toppings" id="veggie toppings" multiple size="6">
+            <option value="" disabled selected> Veggie Toppings</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="mushroom">Mushroom</option>
+            <option value="basil">Basil</option>
+            <option value="pepperocini">Pepperocini</option>
+            <option value="jalapenos">Jalapenos</option>
+        </select>
+    </div>
+
+    <div Personalized toppings>
+        <p>Furthermore, if theres a topping you'd like but dont see available, feel free to type it in below and we will honor it as best as we can</p>
+        <textarea name="instructions" id="instructions" cols="24" rows="5" placeholder="Special toppings"></textarea>
+    </div>
+
+    <h3><strong>All of our pizzas have the option of being bundled with a cast iron skilled. Please indicate if you'd like to purchase one with your pizza or not.</strong> </h3> 
+            <input type="checkbox" name="cast iron yes" id="cast iron yes" value="cast iron yes"><label for="Yes"> Yes, please bundle a cast iron with my order.
+            </label>
+        <br>
+            <input type="checkbox" name="no cast iron" id="no cast iron" value="no cast iron"><label for="No"> No thank you, I have my own cast iron.
+            </label>
+
+    <hr>
+    
+    <div Order submit time!>
+        <form action="#link">
+            <h2> And thats it! Your order is ready to be sent to us! Get ready to enjoy a handcrafted pizza pie baked by you!</h2>
+            <input type="submit" value="Gimme that pie!">
+        </form>
+
+
+</body>
+</html>
